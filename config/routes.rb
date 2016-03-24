@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   root 'articles#index'
 
-  resources :articles
+  resources :articles, only: [:index, :new, :create, :show, :edit, :destroy]
 
 
   # The priority is based upon order of creation: first created -> highest priority.
