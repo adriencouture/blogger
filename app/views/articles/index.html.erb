@@ -1,3 +1,16 @@
 <h1>Articles</h1>
 
 <%= link_to 'Create a new article', 'articles/new' %>
+
+<% @articles.each do |article| %>
+
+  <%= link_to article_path(article.id) do %>
+    <div class="title">
+      <%= article.title %>
+    </div>
+  <% end %>
+    <div class="description">
+      <%= article.description %>
+    </div>
+
+<% end %>
