@@ -1,2 +1,57 @@
+$navbar-default-bg: #fff;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+#logo {
+  float: left;
+  font-size: 1.5em;
+  // font-family: Helvetica-light;
+  font-weight: bold;
+  // letter-spacing: 1px;
+  color: #F37221;
+
+  &:hover {
+    color: #F37221;
+    text-decoration: none;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+.jumbotron {
+  background-image: asset-url('sugar-beach-17.jpg');
+  background-size: cover;
+  height: 550px;
+
+  h1 {
+    margin-bottom: 0.4em;
+  }
+}
+
+footer {
+  margin-top: 1em;
+  padding-top: 0.1em;
+  border-top: 1px solid #EAEAEA;
+  color: #777;
+
+  &:hover {
+    color: #222;
+  }
+
+  small {
+    float: left;
+  }
+
+  ul {
+    float: right;
+    list-style: none;
+
+    li {
+      float:left;
+      margin-left: 15px;
+    }
+  }
+}
